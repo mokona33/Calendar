@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|solutionrelative:calendar\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\CalendarViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Calendar\\Views\\CalendarViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|c:\\users\\sin08\\source\\repos\\calendar\\calendar\\views\\calendarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|solutionrelative:calendar\\views\\calendarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|c:\\users\\sin08\\source\\repos\\calendar\\calendar\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|solutionrelative:calendar\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|c:\\users\\sin08\\source\\repos\\calendar\\calendar\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|solutionrelative:calendar\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|c:\\users\\sin08\\source\\repos\\calendar\\calendar\\models\\calendarday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF27DC12-870A-442A-8E10-A3FC1E96532D}|Calendar\\Calendar.csproj|solutionrelative:calendar\\models\\calendarday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,18 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Calendar\\Views\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml*",
-              "RelativeToolTip": "Calendar\\Views\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T06:32:23.772Z",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Calendar\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Calendar\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T08:07:04.835Z",
               "EditorCaption": ""
             },
             {
@@ -42,7 +55,46 @@
               "RelativeToolTip": "Calendar\\Views\\CalendarViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T06:32:08.311Z"
+              "WhenOpened": "2025-04-06T08:05:18.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalendarDay.cs",
+              "DocumentMoniker": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Models\\CalendarDay.cs",
+              "RelativeDocumentMoniker": "Calendar\\Models\\CalendarDay.cs",
+              "ToolTip": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Models\\CalendarDay.cs",
+              "RelativeToolTip": "Calendar\\Models\\CalendarDay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T07:42:38.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Calendar\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Calendar\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAIA3wBAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T07:36:23.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Calendar\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Views\\MainWindow.xaml*",
+              "RelativeToolTip": "Calendar\\Views\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T06:32:23.772Z",
+              "EditorCaption": ""
             }
           ]
         }

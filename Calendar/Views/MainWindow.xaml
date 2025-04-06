@@ -3,58 +3,50 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="355" Width="530" >
-    <Grid>
-        <UniformGrid Grid.Row="1" Rows="6" Columns="7" Height="170" Width="216">
-            <Label Height="30" Width="30" Content="日" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="月" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="火" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="水" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="木" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="金" BorderBrush="Black" BorderThickness="0.5"/>
-            <Label Height="30" Width="30" Content="土" BorderBrush="Black" BorderThickness="0.5"/>
-            <Button Height="30" Width="30" Content="Button" BorderBrush="Black" BorderThickness="1"/>
-            <Button Height="30" Width="30" Content="Button" BorderBrush="Black" BorderThickness="1"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
-            <Button Height="30" Width="30" Content="Button"/>
+        Title="{Binding Title}" Height="400" Width="400" >
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <!-- 翌月ボタン -->
+            <RowDefinition Height="Auto"/>
+            <!-- 曜日 -->
+            <RowDefinition Height="Auto"/>
+            <!-- 日付 -->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 翌月ボタン -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="翌月 ▶" Command="{Binding NextMonthCommand}" Margin="0,0,10,5"/>
+        </StackPanel>
+
+        <!-- カレンダー -->
+        <UniformGrid Grid.Row="1" Rows="6" Columns="7">
+            <!-- 曜日 -->
+            <Label Content="日" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="月" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="火" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="水" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="木" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="金" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+            <Label Content="土" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
+
+            <!-- 日付ボタン（ItemsControlでバインド） -->
+            <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="7"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding DisplayText}"
+                                Command="{Binding ClickCommand}"
+                                Width="50" Height="50"
+                               
+                                />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </UniformGrid>
     </Grid>
 </Window>
