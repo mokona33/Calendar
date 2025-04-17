@@ -4,14 +4,14 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="400" Width="400" >
-    <Grid Margin="10">
+    <Grid >
         <Grid.RowDefinitions>
             <!-- 翌月ボタン -->
             <RowDefinition Height="Auto"/>
             <!-- 曜日 -->
             <RowDefinition Height="Auto"/>
             <!-- 日付 -->
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <!-- 翌月ボタン -->
@@ -20,16 +20,16 @@
         </StackPanel>
 
         <!-- カレンダー -->
-        <UniformGrid Grid.Row="1" Rows="6" Columns="7">
-            <!-- 曜日 -->
-            <Label Content="日" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="月" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="火" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="水" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="木" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="金" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-            <Label Content="土" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" Width="50" Height="50"/>
-
+        <UniformGrid Grid.Row="1" Rows="6">
+            <!-- 曜日
+            <Label Content="日" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="月" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="火" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="水" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="木" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="金" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+            <Label Content="土" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
+             -->
             <!-- 日付ボタン（ItemsControlでバインド） -->
             <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
                 <ItemsControl.ItemsPanel>
@@ -39,10 +39,11 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Content="{Binding DisplayText}"
-                                Command="{Binding ClickCommand}"
-                                Width="50" Height="50"
-                               
+                        <Button
+                            Width="50"
+                            Height="20"
+                            Content="{Binding DisplayText}"
+                            Command="{Binding ClickCommand}"
                                 />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
