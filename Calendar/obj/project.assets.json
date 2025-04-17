@@ -367,11 +367,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Calendar.csproj",
+      "projectUniqueName": "C:\\git\\Calendar\\Calendar.csproj",
       "projectName": "Calendar",
-      "projectPath": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\Calendar.csproj",
+      "projectPath": "C:\\git\\Calendar\\Calendar.csproj",
       "packagesPath": "C:\\Users\\sin08\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sin08\\source\\repos\\Calendar\\Calendar\\obj\\",
+      "outputPath": "C:\\git\\Calendar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
