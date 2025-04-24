@@ -5,6 +5,59 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="ZXing.Net" Version="0.16.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextAsian">
+      <HintPath>..\..\Users\sin08\Downloads\Example201811081\Example201811081\Example\lib\iTextAsian.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\Users\sin08\Downloads\Example201811081\Example201811081\Example\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Users\sin08\Downloads\Example201811081\Example201811081\Example\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.barcode">
+      <HintPath>lib\systembase.barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.itextsharp">
+      <HintPath>lib\systembase.itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.json">
+      <HintPath>lib\systembase.json.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.NPOI">
+      <HintPath>lib\systembase.NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.NPOI.OOXML">
+      <HintPath>lib\systembase.NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.NPOI.OpenXml4Net">
+      <HintPath>lib\systembase.NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.NPOI.OpenXmlFormats">
+      <HintPath>lib\systembase.NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.report">
+      <HintPath>lib\systembase.report.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.report.renderer.gdi">
+      <HintPath>lib\systembase.report.renderer.gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.report.renderer.pdf">
+      <HintPath>lib\systembase.report.renderer.pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.report.renderer.xls">
+      <HintPath>lib\systembase.report.renderer.xls.dll</HintPath>
+    </Reference>
+    <Reference Include="systembase.report.renderer.xlsx">
+      <HintPath>lib\systembase.report.renderer.xlsx.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

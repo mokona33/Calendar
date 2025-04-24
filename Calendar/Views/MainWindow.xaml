@@ -31,7 +31,8 @@
             <Label Content="土" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5"/>
              -->
             <!-- 日付ボタン（ItemsControlでバインド） -->
-            <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
+            <!-- CalendarDays に 1〜31 件のデータが入っている	その数だけ ItemTemplate を使って UI（ボタン）を自動生成する-->
+                <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <UniformGrid Columns="7"/>
